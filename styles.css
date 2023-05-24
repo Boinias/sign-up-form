@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+form {
+ width: 20%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+ul {
+    list-style-type: none
+  }
+
+  li {
+    margin: 20px;
+  }
+  input,
+  textarea {
+    appearance: none;
+    border-radius: 4px;
+    border-color: #333;
+    min-width: 100%;
+  }
+
+  input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+  
+  input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+  }
+
+  input[id="email"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    color: white;
+    background-color: rgb(80, 10, 10);
+    padding: 4px;
+    border-radius: 4px;
+    content: "Must enter bigcorp.eu email";
+    font-size: smaller;
+    left: -70px;
+  }
+
+  input[id="uname"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    color: white;
+    background-color: rgb(80, 10, 10);
+    padding: 4px;
+    border-radius: 4px;
+    content: "Must be in placeholder format";
+    font-size: smaller;
+    left: -70px;
+  }
+
+  input[id="phone"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    color: white;
+    background-color: rgb(80, 10, 10);
+    padding: 4px;
+    border-radius: 4px;
+    content: "Gotta be inputted with numbers like so, xxx-xxx-xxxx";
+    font-size: smaller;
+    left: -70px;
+  }
