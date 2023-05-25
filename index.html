@@ -7,7 +7,60 @@
   </head>
 
   <body>
-
+    <div class="webpage">
+    <div class="sidebar">
+      <img src="Sidebar.jpg" alt="Classical Clock Tower">
+    </div>
+    <div class="content">
+      <div class="content-1">
+        <div id="text">
+        This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
+        Sign up <i>now</i> to get started.
+            <br>
+            <br>
+        You <i>know</i> you want to.
+      </div>
+      </div>
+      <div class="content-2">
+        <form method="post">
+          <div id="fname">
+          <label for="fname">First Name</label>
+          <input name="sign-up" id="fname" type="text" placeholder="John" required>
+        </div>
+        <div id="lname">
+          <label for="lname">Second Name</label>
+          <input name="sign-up" id="lname" type="text" placeholder="Doe" required>
+        </div>
+        <div id="email">
+          <label for="email">Email</label>
+          <input name="sign-up" id="email" type="email" placeholder="johndoe@email.com" value="rgs">
+          <span></span>
+        </div>
+        <div id="number">
+          <label for="number">Phone Number</label>
+          <input name="sign-up" id="number" type="tel"  placeholder="07123456789" pattern="[0-9]{9,13}" value="rgs">
+          <span></span>
+        </div>
+        <div id="password-initial">
+          <label for="password">Password <span>(5-15 characters long)</span></label>
+          <input name="sign-up" id="password" type="password" placeholder=" " pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,15}$" required>
+          <span></span>
+        </div>
+        <div id="password-confrim">
+          <label for="password-confirm">Confirm Password</label>
+          <input name="sign-up" id="password-confirm" type="password" placeholder=" " required>
+          <span></span>
+        </div>
+        </form>
+      </div>
+      <div class="content-3">
+        <button>Create Account</button>
+        <div id="text">
+          Already have an account? <a href="https://www.youtube.com/watch?v=o3FPzn2LtVQ&ab_channel=SkySportsRetro"id="login">Log in</a>
+        </div>
+      </div><!-- content-3 -->
+    </div><!-- content -->
+  </div> <!-- webpage -->
   </body>
 
 </html>
